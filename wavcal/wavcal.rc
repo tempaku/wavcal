@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\wavcal.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""l.JPN\\afxres.rc""      // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\wavcal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報 wavcal"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "wavcal, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_WAVCAL_DIALOG DIALOGEX 0, 0, 391, 415
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "wavcal"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,254,394,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,334,394,50,14
+    CONTROL         "",IDC_IMG,"Static",SS_BLACKFRAME,7,7,377,53
+    CONTROL         "",IDC_IMG2,"Static",SS_BLACKFRAME,7,121,377,54
+    CONTROL         "",IDC_IMG3,"Static",SS_BLACKFRAME,7,244,377,58
+    CONTROL         "",IDC_IMG4,"Static",SS_BLACKFRAME,7,310,377,75
+    EDITTEXT        IDC_EDIT_F1,30,64,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F2,33,180,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THETA1,102,64,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THETA2,106,180,31,14,ES_AUTOHSCROLL
+    CONTROL         "Log",IDC_RADIO_LOG,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,396,42,12
+    CONTROL         "Linear",IDC_RADIO_LINEAR,"Button",BS_AUTORADIOBUTTON,72,396,42,12
+    CONTROL         "",IDC_SLIDER_F1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,15,82,76,12
+    CONTROL         "",IDC_SLIDER_F2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,16,198,76,12
+    LTEXT           "phase",IDC_STATIC,82,66,18,8
+    LTEXT           "phase",IDC_STATIC,84,184,18,8
+    COMBOBOX        IDC_COMBO1,121,101,50,39,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hz",IDC_STATIC,64,67,8,8
+    LTEXT           "Hz",IDC_STATIC,66,184,8,8
+    COMBOBOX        IDC_COMBO_WINFUNC,7,225,66,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Full",IDC_BTN_1x2_FULL,343,226,22,14
+    CONTROL         "",IDC_SLIDER_1x2_ZOOM,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,227,94,12
+    CONTROL         "inpulse",IDC_INPULSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,186,64,53,11
+    CONTROL         "",IDC_SLIDER_P1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,100,82,58,12
+    CONTROL         "",IDC_SLIDER_P2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,104,198,58,12
+    LTEXT           "π",IDC_STATIC,135,66,8,8
+    LTEXT           "π",IDC_STATIC,138,183,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "wavcal.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "wavcal.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_WAVCAL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 408
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WAVCAL_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0x7e81, "\000" 
+    IDC_COMBO1, 0x403, 3, 0
+0x7b81, "\000" 
+    IDC_COMBO_WINFUNC, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO_WINFUNC, 0x403, 8, 0
+0x6148, 0x6d6d, 0x6e69, 0x0067, 
+    IDC_COMBO_WINFUNC, 0x403, 8, 0
+0x6148, 0x6e6e, 0x6e69, 0x0067, 
+    IDC_COMBO_WINFUNC, 0x403, 16, 0
+0x6c42, 0x6361, 0x6d6b, 0x6e61, 0x482d, 0x7261, 0x6972, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "バージョン情報 wavcal(&A)..."
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\wavcal.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "l.JPN\afxres.rc"      // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
